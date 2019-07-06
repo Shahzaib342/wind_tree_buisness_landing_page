@@ -1,0 +1,33 @@
+html, body { overflow-x: hidden; }
+body { background: #555 url(https://www.foorio.com/assets_leadgen/images/MustBee_watermark.png) no-repeat center bottom; min-height: 100vh; }
+big { color: inherit !important; font-size: 1.5em; }
+small { color: inherit !important; font-size: 0.5em; }
+.bgwhite { background: #FFF !important; }
+.bgblack { background: #000 !important; }
+.white { color: #FFF !important; }
+.black { color: #000 !important; }
+
+.pulse { animation-duration: 2s !important; }
+.flash { animation-duration: 5s !important; }
+
+#privacy { padding-top: 40px; padding-bottom: 60px; background: #FFF; }
+#privacy p { color: #666; margin-bottom: 25px; }
+
+.iubenda { height: 170px; overflow: scroll; border: 1px solid #EEE; background: #F3F3F3; border-radius: 5px; }
+#iubenda_policy { font-family: inherit !important; }
+#iubenda_policy .iub_content { padding: 0 15px !important; }
+#iubenda_policy.iubenda_fluid_policy .iub_container { margin-top: 15px !important; margin-bottom: 30px; }
+#iubenda_policy h2 { text-align: left !important; text-shadow: none; }
+#iubenda-cs-banner { bottom: 0px !important; left: 0px !important; position: fixed !important; width: 100% !important; z-index: 99999998 !important; background-color: black; }
+.iubenda-cs-content { display: block; margin: 0 auto; padding: 20px; width: auto; font-family: inherit !important; font-size: 14px; background: #000; color: #fff;}
+.iubenda-cs-rationale { max-width: 900px; position: relative; margin: 0 auto; }
+.iubenda-banner-content > p { font-family: inherit !important; line-height: 1.5; }
+.iubenda-cs-close-btn { margin:0; color: #fff; text-decoration: none; font-size: 14px; position: absolute; top: 0; right: 0; border: none; }
+.iubenda-cs-cookie-policy-lnk { text-decoration: underline; color: #fff; font-size: 14px; font-weight: 900; }
+
+
+footer { padding: 30px 15px; color: #AAA; box-shadow: inset 0 17px 12px -17px #000; }
+
+VOD, .VOD { color: #E60000 !important; }
+TIM, .TIM { color: #F00 !important; }
+WIN, .WIN { color: #FF6A00 !important; }

@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="<?php echo 'http://' . @$_SERVER['HTTP_HOST']; ?>/index.php">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script type="text/javascript" async src="https://www.foorio.com/assets_leadgen/js/countdown.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" async src="js/count_down.js"></script>
     <script type="text/javascript" async
-            src="https://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            src="js/validator.min.js"></script>
+    <script src="js/jQuery.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    <link rel="stylesheet" href="https://www.foorio.com/assets_leadgen/styles/mustbee.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.foorio.com/assets_leadgen/styles/win1.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mustbe.css">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/win1.css">
     <link rel="stylesheet" href="css/app.css">
     <?php
     $title = 'WINDTRE Business';
     $favicon = "images/logo.png";
     // header logo
-    $logo = "https://www.foorio.com/assets_leadgen/images/logo_winbus.png";
+    $logo = "images/logo_winbus.png";
     $h1 = "WINDTRE Business | Chiamate + Internet fino a 1 Gbit/s";
     $h2 = "Internet e telefono tutto incluso verso fissi e mobili";
     ?>
@@ -96,8 +96,8 @@
                 <div class="col-lg-3 text-left animated zoomInRight">
                     <div class="countdown animated pulse infinite">
                         <?php $stop_date = date('Y-m-d');
-                        echo date('Y-m-d H:i:s', strtotime($stop_date . ' +1 day')); ?>
-                        <div id="demo"></div>
+                        //echo date('Y-m-d H:i:s', strtotime($stop_date . ' +1 day')); ?>
+                        <big><win>Scade tra:</win> <span id="clock"></span></big>
                     </div>
                     <div class="leads">
                         <h4>Compila il modulo per essere contattato SENZA IMPEGNO da un nostro esperto:</h4>
@@ -196,34 +196,3 @@ Per qualsiasi richiesta e/o comunicazione riguardante la Privacy potrai contatta
 
 </body>
 </html>
-
-<script>
-    // Set the date we're counting down to "Jan 5, 2021 15:37:25"
-    var countDownDate = new Date("<?php $stop_date = date('Y-m-d'); echo date('Y-m-d H:i:s', strtotime($stop_date . ' +1 day')); ?>").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>
